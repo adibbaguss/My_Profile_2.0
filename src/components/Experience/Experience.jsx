@@ -18,7 +18,7 @@ const experiences = [
       </>
     ),
     icon: 'fas fa-laptop', // Icon class
-    background: '#4CAF50',
+    background: '#11dd00',
     color: '#fff',
   },
   {
@@ -46,7 +46,7 @@ const experiences = [
     description:
       'Completed an intensive training program focused on modern web technologies and development practices. Gained hands-on experience with HTML, CSS, JavaScript, PHP, MySQL, and Bootstrap. Worked on real-world projects to develop responsive and interactive web interfaces, enhancing both technical and teamwork skills.',
     icon: 'fas fa-laptop', // Icon class
-    background: '#4CAF50',
+    background: '#11dd00',
     color: '#fff',
   },
   {
