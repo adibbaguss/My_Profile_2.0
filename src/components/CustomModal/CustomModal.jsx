@@ -12,7 +12,7 @@ const CustomModal = ({ isOpen, onClose, image }) => {
             &times;
           </button>
           <Zoom>
-            <img src={image} alt="Certificate" className="object-contain max-w-full max-h-screen " />
+            <img src={image} alt="Certificate" className="object-contain max-w-full max-h-screen " loading="lazy" />
           </Zoom>
         </Box>
       </Box>

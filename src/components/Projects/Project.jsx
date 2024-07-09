@@ -42,9 +42,9 @@ const projects = [
     title: 'Travel Service Landing Page (Dummy for Internship Task)',
     description: (
       <>
-        <p>
-          Credit Design :{' '}
-          <a className="underline font-semibold" href="https://dribbble.com/shots/16461003-Travelious-Travelling-Services-Landing-Page-Website">
+        <p className="text-sm">
+          Design source :{' '}
+          <a className="hover:underline font-semibold" href="https://dribbble.com/shots/16461003-Travelious-Travelling-Services-Landing-Page-Website">
             Adhiari Subekti
           </a>
           <br />
@@ -79,7 +79,7 @@ function Project({ title, description, technologies, image, github }) {
 
   return (
     <div className="bg-white p-4 rounded-lg mb-4 overflow-hidden">
-      <img src={image} alt={title} className="mb-2 rounded-lg w-full h-auto" style={{ maxHeight: '300px', objectFit: 'cover' }} />
+      <img src={image} alt={title} className="mb-2 rounded-lg w-full h-auto" style={{ maxHeight: '300px', objectFit: 'cover' }} loading="lazy" />
       <h3 className="text-lg font-bold text-primary-color mb-2">{title}</h3>
       <p className={`text-gray-700 mb-2 ${isExpanded ? '' : 'line-clamp-2'}`}>{description}</p>
       <button onClick={toggleDescription} className="text-blue-500 hover:underline">
@@ -88,7 +88,7 @@ function Project({ title, description, technologies, image, github }) {
       <p className="text-sm mt-3 text-right">
         Github:{' '}
         {github ? (
-          <a className="hover:underline" target="_blank" href={github}>
+          <a className="hover:underline " target="_blank" href={github}>
             Click Here
           </a>
         ) : (

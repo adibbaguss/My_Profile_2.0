@@ -54,6 +54,7 @@ const Certificates = () => {
             alt={certificate.alt}
             className="cursor-pointer transform hover:scale-105 hover:shadow-lg transition-transform border border-solid  border-primary-color rounded-md   "
             onClick={() => openModal(certificate.src)}
+            loading="lazy"
           />
         ))}
       </Masonry>
