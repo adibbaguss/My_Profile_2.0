@@ -11,6 +11,9 @@ function About() {
       {/* text for sm */}
       <div className="rounded xl:ml-28 xl:mt-24 mt-0 ml-0 p-4 block sm:hidden">
         <h1 className="font-bold text-1xl sm:text-2xl md:text-3xl lg:text-3xl mb-2 text-primary-color">About Me</h1>
+        <div className="font-bold text-sm md:text-base ">
+          <span className="text-primary-color">Adib Bagus Sudiyono | </span> <span className="text-green bg-primary-color px-1">Full-Stack Developer</span>
+        </div>
         <p className="text-justify ">{aboutMe}</p>
       </div>
       <div className="flex flex-row">
@@ -18,6 +21,9 @@ function About() {
         <div className="md:basis-1/2 basis-4/5 ">
           <div className="rounded xl:ml-28 xl:mt-24 mt-0 ml-0 p-4 hidden sm:block">
             <h1 className="font-bold text-1xl sm:text-2xl md:text-3xl lg:text-3xl mb-2 text-primary-color">About Me</h1>
+            <div className="font-bold text-sm md:text-base ">
+              <span className="text-primary-color">Adib Bagus Sudiyono | </span> <span className="text-green bg-primary-color px-1">Full-Stack Developer</span>
+            </div>
             <p className="text-justify text-sm md:text-base">{aboutMe}</p>
           </div>
 
@@ -31,7 +37,11 @@ function About() {
           <div className="flex flex-row mt-auto mb-0">
             <div className="md:basis-2/3 sm:basis-0 ">
               <div className="w-full relative bottom-0 h-full lg:h-screen md:block hidden ">
-                <img className="absolute bottom-0 lg:h-screen h-screen max-w-screen-sm  md:max-w-26rem lg:max-w-none object-cover transition-transform duration-300 transform object-left" src={Avatar} alt="avatar about" />
+                <img
+                  className="absolute  right-0 bottom-0 lg:h-screen max-h-full max-w-screen-sm  md:max-w-26rem lg:max-w-none object-cover transition-transform duration-300 transform object-left grayscale "
+                  src={Avatar}
+                  alt="avatar about"
+                />
               </div>
             </div>
             <div className="md:basis-1/3 grid place-content-end ">

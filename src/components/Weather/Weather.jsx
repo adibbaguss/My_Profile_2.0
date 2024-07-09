@@ -33,7 +33,7 @@ const Weather = () => {
     const checkTime = () => {
       const currentTime = new Date();
       const currentHour = currentTime.getHours();
-      if (currentHour >= 9 && currentHour < 19) {
+      if (currentHour >= 7 && currentHour < 19) {
         setTimeColor('green');
       } else {
         setTimeColor('red');

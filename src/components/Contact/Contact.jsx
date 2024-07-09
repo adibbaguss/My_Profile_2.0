@@ -55,7 +55,7 @@ export const Contact = () => {
   };
 
   return (
-    <section className="bg-primary-color text-secondary-color min-h-screen p-6 overflow-hidden">
+    <section className="bg-primary-color text-secondary-color lg:h-screen p-6 overflow-hidden">
       <h1 className="font-bold text-1xl sm:text-2xl md:text-3xl lg:text-3xl mb-10 text-secondary-color text-center">Contact Me</h1>
 
       <div className="flex flex-col md:flex-row items-center justify-center">

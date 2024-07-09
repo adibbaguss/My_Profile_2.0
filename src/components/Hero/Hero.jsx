@@ -26,7 +26,7 @@ function Hero() {
         {/* <img src={heroText1} alt="Hero text-1" className="pb-4" /> */}
         <img src={heroText1} alt="Hero text-1" className="px-2 pb-9" data-aos="fade-up" data-aos-duration="600" />
         <div className="w-full absolute bottom-0 h-full lg:h-screen overflow-hidden" data-aos="zoom-in-up" data-aos-duration="800">
-          <motion.img src={avatar} alt="avatar" className="h-full mx-auto" whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }} />
+          <motion.img src={avatar} alt="avatar" className="h-full mx-auto " whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }} />
         </div>
 
         <div className="absolute bottom-0  w-full h-40" data-aos="fade-up" data-aos-duration="1200">
