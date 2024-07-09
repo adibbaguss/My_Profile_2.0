@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
-import heroText1 from '../../assets/Images/Hero/text-hero-1.png';
-import heroText2 from '../../assets/Images/Hero/text-hero-2.png';
+import heroText1 from '../../assets/Images/Hero/2.png';
+import heroText2 from '../../assets/Images/Hero/1.png';
 import avatar from '../../assets/Images/Hero/avatar.png';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
@@ -26,7 +26,7 @@ function Hero() {
         {/* <img src={heroText1} alt="Hero text-1" className="pb-4" /> */}
         <img src={heroText1} alt="Hero text-1" className="px-2 pb-9" data-aos="fade-up" data-aos-duration="600" />
         <div className="w-full absolute bottom-0 h-full lg:h-screen overflow-hidden" data-aos="zoom-in-up" data-aos-duration="800">
-          <motion.img src={avatar} alt="avatar" className="h-full mx-auto " whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }} />
+          <motion.img src={avatar} alt="avatar" className="h-full mx-auto " whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }} loading="lazy" />
         </div>
 
         <div className="absolute bottom-0  w-full h-40" data-aos="fade-up" data-aos-duration="1200">
