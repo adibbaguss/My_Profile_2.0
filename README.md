@@ -77,6 +77,3 @@ The build output will be saved in the `build/` folder.
 For any questions or further communication, feel free to reach out via email: adibbagus42@gmail.com or visit my LinkedIn profile at [LinkedIn](https://www.linkedin.com/in/adibbaguss/).
 
 Thank you for visiting my web profile!
-```
-
-You can copy and paste this template into your `README.md` file in your GitHub repository. Feel free to adjust any details as needed.
