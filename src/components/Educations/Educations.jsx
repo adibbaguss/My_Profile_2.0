@@ -1,5 +1,7 @@
+import React from 'react';
 import { motion } from 'framer-motion';
 import EducationPNG from '../../assets/Images/Educations/educations.png';
+import dataJson from '../../data/data.json'; // Import data JSON
 
 const Educations = () => {
   // Array untuk menyimpan elemen gambar
@@ -12,6 +14,9 @@ const Educations = () => {
     educationImages.push(<img key={i} className={`mb-5 ${opacityClass}`} src={EducationPNG} alt={`Education ${i}`} />);
   }
 
+  // Mengambil data pendidikan dari dataJson
+  const educations = dataJson.educations;
+
   return (
     <section className="bg-primary-color py-10 relative lg:h-screen overflow-hidden">
       <div className="img absolute top-0 left-0 w-full h-full overflow-hidden" style={{ pointerEvents: 'none' }}>
@@ -21,14 +26,9 @@ const Educations = () => {
       <div className="max-w-4xl mx-auto px-10 relative z-10 my-auto">
         <h1 className="font-bold text-1xl sm:text-2xl md:text-3xl lg:text-3xl mb-10 text-secondary-color text-center">Educations</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <EducationItem schoolName="Universitas Ahmad Dahlan" degree="Bachelor of Informatics" location="Yogyakarta, Special Region of Yogyakarta" duration="Sep 2019 – Mar 2024" achievements="" gpa="GPA: 3.72" />
-          <EducationItem
-            schoolName="SMK Diponegoro Banyuputih"
-            degree="Computer and Network Engineering"
-            location="Batang, Central Java"
-            duration="Jul 2016 – May 2019"
-            achievements={['Chief of Scout (Pradana) SMK Diponegoro Banyuputih, 2017 – 2018', 'Ranked 2nd as the best graduate in Computer and Network Engineering at SMK Diponegoro Banyuputih']}
-          />
+          {educations.map((education, index) => (
+            <EducationItem key={index} schoolName={education.schoolName} degree={education.degree} location={education.location} duration={education.duration} achievements={education.achievements} gpa={education.gpa} />
+          ))}
         </div>
       </div>
     </section>
@@ -43,7 +43,7 @@ const EducationItem = ({ schoolName, degree, location, duration, achievements, g
         <p className="text-gray-600 mb-2">{degree}</p>
         <p className="text-gray-600 mb-2">{location}</p>
         <p className="text-gray-600 mb-2">{duration}</p>
-        {achievements && (
+        {achievements && achievements.length > 0 && (
           <ul className="list-disc ml-6 mb-4">
             {achievements.map((achievement, index) => (
               <li key={index} className="text-gray-700">

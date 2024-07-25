@@ -1,0 +1,98 @@
+{
+  "name": "Adib Bagus Sudiyono",
+  "role": "Junior Full Stack Developer",
+
+  "//": "1. Hero Section",
+  "hero": {
+    "sectionName": "Hero Section",
+    "avatar": "/src/assets/Images/Hero/avatar.png",
+    "heroText1": "/src/assets/Images/Hero/2.png",
+    "heroText2": "/src/assets/Images/Hero/1.png"
+  },
+
+  "//": "2. About Section",
+  "about": {
+    "sectionName": "About Me",
+    "avatar": "/src/assets/Images/About/avatar.png",
+    "aboutMe": "A graduate of Informatics Engineering from Ahmad Dahlan University, specialized in software development. Experienced in front-end development, academic administration management, and website optimization. Proficient in teamwork, SDLC methodology implementation, with additional skills in graphic design and video editing."
+  },
+
+  "//": "3. Skills Section",
+  "skills": ["html", "css", "js", "php", "java", "sass", "bootstrap", "tailwind", "mysql", "laravel", "react", "vite", "npm", "vscode", "postman", "androidstudio", "figma", "photoshop", "premiere"],
+
+  "//": "4. Experience Section",
+  "experience": [
+    {
+      "type": "bootcamp",
+      "date": "06 May 2024 – 06 July 2024 (2 Month)",
+      "title": "Trainee of Mobile App Development with React Native (Progate)",
+      "subtitle": "Digital Talent Scholarship - KOMINFO",
+      "description": "As a Trainee of Mobile App Development with React Native in the FGA program by Digital Talent Kominfo in collaboration with Progate, I am learning the essential skills for building mobile apps using React Native. With guidance from industry experts, I am gaining practical knowledge to kickstart my career in this field.",
+      "icon": "fas fa-laptop",
+      "background": "#11dd00",
+      "color": "#fff"
+    },
+    {
+      "type": "work",
+      "date": "02 November 2022 – April 2023 (6 Month)",
+      "title": "Student Employee",
+      "subtitle": "Universitas Ahmad Dahlan, Yogyakarta, DIY",
+      "description": "<ul class='list-disc pl-5 space-y-2'><li>Handled administration and academic needs for students and faculty in the Vocational Teacher Education Master's Program.</li><li>Updated information and implemented SEO on the program's website.</li></ul>",
+      "icon": "fas fa-briefcase",
+      "background": "#2196F3",
+      "color": "#fff"
+    },
+    {
+      "type": "bootcamp",
+      "date": "20 September 2021 – 19 October 2021 (1 Month)",
+      "title": "Trainee of Junior Web Developer",
+      "subtitle": "Balai Pelatihan dan Pengembangan Teknologi Informasi dan Komunikasi",
+      "description": "Completed an intensive training program focused on modern web technologies and development practices. Gained hands-on experience with HTML, CSS, JavaScript, PHP, MySQL, and Bootstrap. Worked on real-world projects to develop responsive and interactive web interfaces, enhancing both technical and teamwork skills.",
+      "icon": "fas fa-laptop",
+      "background": "#11dd00",
+      "color": "#fff"
+    },
+    {
+      "type": "work",
+      "date": "02 July 2022 – 30 September 2022 (3 Month)",
+      "title": "Front-end Developer (Internship)",
+      "subtitle": "ARPATEAM, Bantul, DIY",
+      "description": "<ul class='list-disc pl-5 space-y-2'><li>Developed responsive user interfaces (UI) using HTML, CSS, JavaScript, and Bootstrap.</li><li>Created and refined graphic assets, including icons, graphics, and background images.</li></ul>",
+      "icon": "fas fa-briefcase",
+      "background": "#2196F3",
+      "color": "#fff"
+    }
+  ],
+
+  "//": "6. Education sections",
+  "educations": [
+    {
+      "schoolName": "Universitas Ahmad Dahlan",
+      "degree": "Bachelor of Informatics",
+      "location": "Yogyakarta, Special Region of Yogyakarta",
+      "duration": "Sep 2019 – Mar 2024",
+      "achievements": [],
+      "gpa": "GPA: 3.72"
+    },
+    {
+      "schoolName": "SMK Diponegoro Banyuputih",
+      "degree": "Computer and Network Engineering",
+      "location": "Batang, Central Java",
+      "duration": "Jul 2016 – May 2019",
+      "achievements": ["Chief of Scout (Pradana) SMK Diponegoro Banyuputih, 2017 – 2018", "Ranked 2nd as the best graduate in Computer and Network Engineering at SMK Diponegoro Banyuputih"],
+      "gpa": ""
+    }
+  ],
+
+  "//": "6. Education sections",
+  "certificates": [
+    { "id": 1, "src": "/src/assets/Images/Certificates/Junior Web Developer.jpg", "alt": "Certificate 1" },
+    { "id": 2, "src": "/src/assets/Images/Certificates/Sertifikat_ADIB BAGUS SUDIYONO_Mobile App Development with React Native_page-0001.jpg", "alt": "Certificate 2" },
+    { "id": 3, "src": "/src/assets/Images/Certificates/Mobile_Development_Adib Bagus Sudiyono.jpg", "alt": "Certificate 3" },
+    { "id": 4, "src": "/src/assets/Images/Certificates/react.png", "alt": "Certificate 4" },
+    { "id": 5, "src": "/src/assets/Images/Certificates/javascript.png", "alt": "Certificate 5" },
+    { "id": 6, "src": "/src/assets/Images/Certificates/html & css.png", "alt": "Certificate 6" },
+    { "id": 7, "src": "/src/assets/Images/Certificates/sql.png", "alt": "Certificate 7" },
+    { "id": 8, "src": "/src/assets/Images/Certificates/git.png", "alt": "Certificate 8" }
+  ]
+}

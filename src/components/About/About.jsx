@@ -1,30 +1,27 @@
 import React from 'react';
-import Avatar from '../../assets/Images/About/avatar.png';
+import dataJson from '../../data/data.json';
 import Skills from '../Skills/Skills';
 
 function About() {
-  const aboutMe =
-    'A graduate of Informatics Engineering from Ahmad Dahlan University, specialized in software development. Experienced in front-end development, academic administration management, and website optimization. Proficient in teamwork, SDLC methodology implementation, with additional skills in graphic design and video editing.';
-
   return (
     <section className="lg:h-screen overflow-hidden">
       {/* text for sm */}
       <div className="rounded xl:ml-28 xl:mt-24 mt-0 ml-0 p-4 block sm:hidden">
-        <h1 className="font-bold text-1xl sm:text-2xl md:text-3xl lg:text-3xl mb-2 text-primary-color">About Me</h1>
+        <h1 className="font-bold text-1xl sm:text-2xl md:text-3xl lg:text-3xl mb-2 text-primary-color">{dataJson.about.sectionName}</h1>
         <div className="font-bold text-sm md:text-base ">
-          <span className="text-primary-color">Adib Bagus Sudiyono | </span> <span className="text-green bg-primary-color px-1">Full-Stack Developer</span>
+          <span className="text-primary-color">{dataJson.name} | </span> <span className="text-green bg-primary-color px-1">{dataJson.role}</span>
         </div>
-        <p className="text-justify ">{aboutMe}</p>
+        <p className="text-justify ">{dataJson.about.aboutMe}</p>
       </div>
       <div className="flex flex-row">
-        {/* text about me */}
+        {/* text {dataJson.about.sectionName} */}
         <div className="md:basis-1/2 basis-4/5 ">
-          <div className="rounded xl:ml-28 xl:mt-24 mt-0 ml-0 p-4 hidden sm:block">
-            <h1 className="font-bold text-1xl sm:text-2xl md:text-3xl lg:text-3xl mb-2 text-primary-color">About Me</h1>
+          <div className="rounded ml-0 mt-0 p-4 hidden sm:block lg:ml-28 lg:mt-24">
+            <h1 className="font-bold text-1xl sm:text-2xl md:text-3xl lg:text-3xl mb-2 text-primary-color">{dataJson.about.sectionName}</h1>
             <div className="font-bold text-sm md:text-base ">
-              <span className="text-primary-color">Adib Bagus Sudiyono | </span> <span className="text-green bg-primary-color px-1">Full-Stack Developer</span>
+              <span className="text-primary-color">{dataJson.name} | </span> <span className="text-green bg-primary-color px-1">{dataJson.role}</span>
             </div>
-            <p className="text-justify text-sm md:text-base">{aboutMe}</p>
+            <p className="text-justify text-sm md:text-base">{dataJson.about.aboutMe}</p>
           </div>
 
           <div className="max-w-lg rounded-lg bg-primary-color xl:mt-5 mb-5 lg:mb-10 lg:ml-auto lg:mr-0 mx-4 p-4">
@@ -39,7 +36,7 @@ function About() {
               <div className="w-full relative bottom-0 h-full lg:h-screen md:block hidden ">
                 <img
                   className="absolute  right-0 bottom-0 lg:h-screen max-h-full max-w-screen-sm  md:max-w-26rem lg:max-w-none object-cover transition-transform duration-300 transform object-left grayscale "
-                  src={Avatar}
+                  src={dataJson.about.avatar}
                   alt="avatar about"
                 />
               </div>
