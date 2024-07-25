@@ -5,15 +5,15 @@
   "//": "1. Hero Section",
   "hero": {
     "sectionName": "Hero Section",
-    "avatar": "/src/assets/Images/Hero/avatar.png",
-    "heroText1": "/src/assets/Images/Hero/2.png",
-    "heroText2": "/src/assets/Images/Hero/1.png"
+    "avatar": "/assets/Images/Hero/avatar.png",
+    "heroText1": "/assets/Images/Hero/2.png",
+    "heroText2": "/assets/Images/Hero/1.png"
   },
 
   "//": "2. About Section",
   "about": {
     "sectionName": "About Me",
-    "avatar": "/src/assets/Images/About/avatar.png",
+    "avatar": "/assets/Images/About/avatar.png",
     "aboutMe": "A graduate of Informatics Engineering from Ahmad Dahlan University, specialized in software development. Experienced in front-end development, academic administration management, and website optimization. Proficient in teamwork, SDLC methodology implementation, with additional skills in graphic design and video editing."
   },
 
@@ -86,13 +86,13 @@
 
   "//": "6. Education sections",
   "certificates": [
-    { "id": 1, "src": "/src/assets/Images/Certificates/Junior Web Developer.jpg", "alt": "Certificate 1" },
-    { "id": 2, "src": "/src/assets/Images/Certificates/Sertifikat_ADIB BAGUS SUDIYONO_Mobile App Development with React Native_page-0001.jpg", "alt": "Certificate 2" },
-    { "id": 3, "src": "/src/assets/Images/Certificates/Mobile_Development_Adib Bagus Sudiyono.jpg", "alt": "Certificate 3" },
-    { "id": 4, "src": "/src/assets/Images/Certificates/react.png", "alt": "Certificate 4" },
-    { "id": 5, "src": "/src/assets/Images/Certificates/javascript.png", "alt": "Certificate 5" },
-    { "id": 6, "src": "/src/assets/Images/Certificates/html & css.png", "alt": "Certificate 6" },
-    { "id": 7, "src": "/src/assets/Images/Certificates/sql.png", "alt": "Certificate 7" },
-    { "id": 8, "src": "/src/assets/Images/Certificates/git.png", "alt": "Certificate 8" }
+    { "id": 1, "src": "/assets/Images/Certificates/Junior Web Developer.jpg", "alt": "Certificate 1" },
+    { "id": 2, "src": "/assets/Images/Certificates/Sertifikat_ADIB BAGUS SUDIYONO_Mobile App Development with React Native_page-0001.jpg", "alt": "Certificate 2" },
+    { "id": 3, "src": "/assets/Images/Certificates/Mobile_Development_Adib Bagus Sudiyono.jpg", "alt": "Certificate 3" },
+    { "id": 4, "src": "/assets/Images/Certificates/react.png", "alt": "Certificate 4" },
+    { "id": 5, "src": "/assets/Images/Certificates/javascript.png", "alt": "Certificate 5" },
+    { "id": 6, "src": "/assets/Images/Certificates/html & css.png", "alt": "Certificate 6" },
+    { "id": 7, "src": "/assets/Images/Certificates/sql.png", "alt": "Certificate 7" },
+    { "id": 8, "src": "/assets/Images/Certificates/git.png", "alt": "Certificate 8" }
   ]
 }
