@@ -3,8 +3,7 @@
 Welcome to Adib Bagus Sudiyono's web profile! This is an online portfolio showcasing my experience, skills, and projects as a Web Developer.
 
 ## Live Preview
-![fasdfsadf](https://github.com/user-attachments/assets/aa1d564b-014d-4547-be48-ddeb6860b953)
-
+![Web Profile Thumbnail](https://github.com/user-attachments/assets/aa1d564b-014d-4547-be48-ddeb6860b953)
 
 You can view the live version of this profile at [adibbaguss.github.io](https://adibbaguss.github.io).
 
