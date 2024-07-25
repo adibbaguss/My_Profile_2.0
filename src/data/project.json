@@ -43,5 +43,14 @@
     "image": "/assets/Images/Portofolio/landing page deler.png",
     "github": "https://github.com/adibbaguss/landing_page_dealer",
     "category": "Website"
+  },
+  {
+    "id": 6,
+    "title": "API Sekolah SMK",
+    "description": "An API designed to manage SMK school data. This API provides endpoints for CRUD operations on data such as students, teachers, majors, subjects, schedules, teaching assignments, grades, and classes. Ideal for educational management systems.",
+    "technologies": ["Laravel", "PHP", "MySQL"],
+    "image": "/assets/images/api_sekolah_smk.png",
+    "github": "https://github.com/adibbaguss/rest-api-sekolah-smk",
+    "category": "API"
   }
 ]
