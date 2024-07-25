@@ -85,14 +85,14 @@
   ],
 
   "//": "6. Education sections",
+
   "certificates": [
-    { "id": 1, "src": "/assets/Images/Certificates/Junior Web Developer.jpg", "alt": "Certificate 1" },
-    { "id": 2, "src": "/assets/Images/Certificates/Sertifikat_ADIB BAGUS SUDIYONO_Mobile App Development with React Native_page-0001.jpg", "alt": "Certificate 2" },
-    { "id": 3, "src": "/assets/Images/Certificates/Mobile_Development_Adib Bagus Sudiyono.jpg", "alt": "Certificate 3" },
-    { "id": 4, "src": "/assets/Images/Certificates/react.png", "alt": "Certificate 4" },
-    { "id": 5, "src": "/assets/Images/Certificates/javascript.png", "alt": "Certificate 5" },
-    { "id": 6, "src": "/assets/Images/Certificates/html & css.png", "alt": "Certificate 6" },
-    { "id": 7, "src": "/assets/Images/Certificates/sql.png", "alt": "Certificate 7" },
-    { "id": 8, "src": "/assets/Images/Certificates/git.png", "alt": "Certificate 8" }
+    { "id": 1, "src": "/assets/Images/Certificates/Junior Web Developer.jpg", "alt": "Junior Web Developer Certificate" },
+    { "id": 2, "src": "/assets/Images/Certificates/hki.png", "alt": "HKI Certificate" },
+    { "id": 3, "src": "/assets/Images/Certificates/Sertifikat_ADIB BAGUS SUDIYONO_Mobile App Development with React Native_page-0001.jpg", "alt": "Mobile App Development with React Native Certificate" },
+    { "id": 4, "src": "/assets/Images/Certificates/Mobile_Development_Adib Bagus Sudiyono.jpg", "alt": "Mobile Development Certificate" },
+    { "id": 5, "src": "/assets/Images/Certificates/react.png", "alt": "React Certificate" },
+    { "id": 6, "src": "/assets/Images/Certificates/javascript.png", "alt": "JavaScript Certificate" },
+    { "id": 7, "src": "/assets/Images/Certificates/sql.png", "alt": "SQL Certificate" }
   ]
 }

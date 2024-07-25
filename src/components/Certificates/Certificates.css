@@ -1,15 +1,30 @@
-/* App.css or your CSS file */
+/* Masonry grid container */
 .my-masonry-grid {
   display: flex;
-  margin-left: -20px; /* gutter size offset */
+  margin-left: -15px; /* Mengurangi ruang kiri dari grid */
   width: auto;
+  margin-top: -15px; /* Mengurangi ruang atas dari grid */
 }
+
+/* Masonry grid column */
 .my-masonry-grid_column {
-  padding-left: 20px; /* gutter size */
+  padding-left: 15px; /* Menyesuaikan padding kiri untuk setiap kolom */
+  padding-top: 15px; /* Menyesuaikan padding atas untuk setiap kolom */
   background-clip: padding-box;
 }
 
-/* Optional: apply a background color & padding for the items */
-.my-masonry-grid_column > img {
-  margin-bottom: 20px;
+/* Gaya gambar di dalam grid */
+.masonry-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px; /* Jarak antar gambar */
+  border-radius: 8px; /* Sudut gambar yang melengkung */
+}
+
+/* Tombol Show More/Less */
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }

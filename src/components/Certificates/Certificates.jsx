@@ -31,6 +31,7 @@ const Certificates = () => {
     1100: 3,
     700: 2,
     500: 1,
+    400: 1,
   };
 
   return (
@@ -42,10 +43,9 @@ const Certificates = () => {
             key={certificate.id}
             src={certificate.src}
             alt={certificate.alt}
-            className="cursor-pointer transform hover:scale-105 hover:shadow-lg transition-transform border border-solid border-primary-color rounded-md"
+            className="masonry-image cursor-pointer transform hover:scale-105 hover:shadow-lg transition-transform border border-solid border-primary-color rounded-md"
             onClick={() => openModal(certificate.src)}
             loading="lazy"
-            style={{ height: 'auto' }}
           />
         ))}
       </Masonry>
