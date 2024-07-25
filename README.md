@@ -1,8 +1,81 @@
-# React + Vite
+# Adib Bagus Sudiyono's Web Profile
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to Adib Bagus Sudiyono's web profile! This is an online portfolio showcasing my experience, skills, and projects as a Web Developer.
 
-Currently, two official plugins are available:
+## Live Preview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+You can view the live version of this profile at [adibbaguss.github.io](https://adibbaguss.github.io).
+
+## Installation and Usage
+
+To set up and run this project locally, follow these steps:
+
+### 1. Clone Repository
+
+Clone this repository to your local machine using the following command:
+
+```bash
+git clone https://github.com/adibbaguss/adibbaguss.github.io.git
+```
+
+### 2. Install Dependencies
+
+Navigate to the project directory and install the required dependencies with npm or yarn:
+
+```bash
+cd adibbaguss.github.io
+npm install
+```
+
+or if you are using yarn:
+
+```bash
+yarn install
+```
+
+### 3. Run the Project
+
+Start the project locally with the following command:
+
+```bash
+npm start
+```
+
+or if you are using yarn:
+
+```bash
+yarn start
+```
+
+The project will run at `http://localhost:3000` by default.
+
+### 4. Build for Production
+
+To create a production build of the project, run:
+
+```bash
+npm run build
+```
+
+or if you are using yarn:
+
+```bash
+yarn build
+```
+
+The build output will be saved in the `build/` folder.
+
+## Technologies Used
+
+- **React JS**: JavaScript library for building user interfaces.
+- **Tailwind CSS**: Utility-first CSS framework.
+- **Font Awesome**: Icons for enhancing visual appeal.
+
+## Contact
+
+For any questions or further communication, feel free to reach out via email: adibbagus42@gmail.com or visit my LinkedIn profile at [LinkedIn](https://www.linkedin.com/in/adibbaguss/).
+
+Thank you for visiting my web profile!
+```
+
+You can copy and paste this template into your `README.md` file in your GitHub repository. Feel free to adjust any details as needed.
