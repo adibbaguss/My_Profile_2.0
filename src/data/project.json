@@ -49,7 +49,7 @@
     "title": "API Sekolah SMK",
     "description": "An API designed to manage SMK school data. This API provides endpoints for CRUD operations on data such as students, teachers, majors, subjects, schedules, teaching assignments, grades, and classes. Ideal for educational management systems.",
     "technologies": ["Laravel", "PHP", "MySQL"],
-    "image": "/assets/images/rest-api-smk.png",
+    "image": "/assets/Images/Portofolio/rest-api-smk.png",
     "github": "https://github.com/adibbaguss/rest-api-sekolah-smk",
     "category": "API"
   }
