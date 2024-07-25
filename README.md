@@ -78,5 +78,3 @@ For any questions or further communication, feel free to reach out via email: ad
 
 Thank you for visiting my web profile!
 ```
-
-You can copy and paste this template into your `README.md` file in your GitHub repository. Feel free to adjust any details as needed.
