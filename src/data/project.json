@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "title": "Webgis Ponpes",
+    "title": "WebGIS Podok Pesantren",
     "description": "Developed a platform to map Islamic boarding schools (pondok pesantren) and religious schools (madrasah diniyah) in Batang Regency. The platform includes features such as mapping, reporting, and data management (CRUD). Users of the platform include System Admins (managing the entire system), Pondok Pesantren Admins (managing boarding school data), Madrasah Diniyah Admins (managing religious school data), and General Users (viewing data and making reports).",
     "technologies": ["Laravel", "PHP", "HTML/CSS", "Javascript", "Bootstrap", "LeafletJs", "Cropper.js", "Chart.js"],
     "image": "/assets/Images/Portofolio/webgis ponpes.png",
@@ -10,7 +10,7 @@
   },
   {
     "id": 2,
-    "title": "Smart Parking (for course assignments)",
+    "title": "Smart Parking",
     "description": "Developed a mobile application that allows users to view parking location conditions and easily perform check-in and check-out. This application was created in collaboration with a team of 2 people, where I served as the front-end developer. The application was made to fulfill the requirements of a mobile programming course assignment.",
     "technologies": ["Java", "XML", "Google Maps API"],
     "image": "/assets/Images/Portofolio/smart parking.jpg",
@@ -19,7 +19,7 @@
   },
   {
     "id": 3,
-    "title": "Movie App (for course assignments)",
+    "title": "Movie App",
     "description": "This application, which displays movie information, was created as an assignment for the \"Mobile App Development with React Native\" training (Progate) organized by Kominfo. The project was developed by a team of three members, utilizing CI/CD for collaboration.",
     "technologies": ["React Native", "Expo", "TypeScript", "CSS3", "TMDb API"],
     "image": "/assets/Images/Portofolio/movieapp.png",
@@ -28,7 +28,7 @@
   },
   {
     "id": 4,
-    "title": "Travel Service Landing Page (Dummy for Internship Task)",
+    "title": "Travel Service Landing Page",
     "description": "Design source : <a class=\"hover:underline font-semibold\" target=\"_blank\" href=\"https://dribbble.com/shots/16461003-Travelious-Travelling-Services-Landing-Page-Website\">Adhiari Subekti</a><br />Developed a web landing page showcasing comprehensive information about travel services using dummy data. This project was created for an internship task, demonstrating skills in modern technologies and responsive design.",
     "technologies": ["CodeIgniter", "Bootstrap", "PHP", "HTML/CSS", "JavaScript"],
     "image": "/assets/Images/Portofolio/landing page travel.png",
@@ -37,7 +37,7 @@
   },
   {
     "id": 5,
-    "title": "Motor Vehicle Dealer Landing Page (Dummy for Internship Task)",
+    "title": "Motor Vehicle Dealer Landing Page",
     "description": "Developed a web landing page showcasing comprehensive information about a motor vehicle dealer using dummy data. This project was created for an internship task, demonstrating skills in modern technologies and responsive design.",
     "technologies": ["CodeIgniter", "Bootstrap", "PHP", "HTML/CSS", "JavaScript"],
     "image": "/assets/Images/Portofolio/landing page deler.png",

@@ -18,7 +18,7 @@
   },
 
   "//": "3. Skills Section",
-  "skills": ["html", "css", "js", "php", "java", "sass", "bootstrap", "tailwind", "mysql", "laravel", "react", "vite", "npm", "vscode", "postman", "androidstudio", "figma", "photoshop", "premiere"],
+  "skills": ["html", "css", "js", "php", "java", "sass", "bootstrap", "tailwind", "mysql", "laravel", "react", "vite", "npm", "vscode", "postman", "github", "androidstudio", "figma", "photoshop", "premiere"],
 
   "//": "4. Experience Section",
   "experience": [
@@ -57,7 +57,7 @@
       "date": "02 July 2022 – 30 September 2022 (3 Month)",
       "title": "Front-end Developer (Internship)",
       "subtitle": "ARPATEAM, Bantul, DIY",
-      "description": "<ul class='list-disc pl-5 space-y-2'><li>Developed responsive user interfaces (UI) using HTML, CSS, JavaScript, and Bootstrap.</li><li>Created and refined graphic assets, including icons, graphics, and background images.</li></ul>",
+      "description": "<ul class='list-disc space-y-2'><li>Developed responsive user interfaces (UI) using HTML, CSS, JavaScript, and Bootstrap.</li><li>Created and refined graphic assets, including icons, graphics, and background images.</li></ul>",
       "icon": "fas fa-briefcase",
       "background": "#2196F3",
       "color": "#fff"

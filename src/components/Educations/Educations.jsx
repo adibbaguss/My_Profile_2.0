@@ -39,12 +39,12 @@ const EducationItem = ({ schoolName, degree, location, duration, achievements, g
   return (
     <motion.div className="bg-green rounded-md shadow-md" whileHover={{ scale: 1.05, boxShadow: '0px 4px 20px rgba(0, 0, 0, 0.1)', paddingBottom: 10 }} whileTap={{ scale: 0.95 }}>
       <div className="bg-white p-6 rounded-lg h-full">
-        <h3 className="text-lg font-bold text-gray-800">{schoolName}</h3>
-        <p className="text-gray-600 mb-2">{degree}</p>
-        <p className="text-gray-600 mb-2">{location}</p>
-        <p className="text-gray-600 mb-2">{duration}</p>
+        <h2 className="text-base lg:text-lg font-bold text-gray-800">{schoolName}</h2>
+        <p className="text-gray-600 mb-2 text-sm lg:text-base">{degree}</p>
+        <p className="text-gray-600 mb-2 text-sm lg:text-base">{location}</p>
+        <p className="text-gray-600 mb-2 text-sm lg:text-base">{duration}</p>
         {achievements && achievements.length > 0 && (
-          <ul className="list-disc ml-6 mb-4">
+          <ul className="list-disc ml-6 mb-4 text-sm lg:text-base">
             {achievements.map((achievement, index) => (
               <li key={index} className="text-gray-700">
                 {achievement}
@@ -52,7 +52,7 @@ const EducationItem = ({ schoolName, degree, location, duration, achievements, g
             ))}
           </ul>
         )}
-        {gpa && <p className="text-gray-600 mb-2">{gpa}</p>}
+        {gpa && <p className="text-gray-600 mb-2 text-sm lg:text-base">{gpa}</p>}
       </div>
     </motion.div>
   );

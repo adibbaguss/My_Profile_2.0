@@ -24,14 +24,14 @@ function Project({ title, description, technologies, image, github }) {
   return (
     <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
       {/* Front of the card */}
-      <div className="bg-white p-4 rounded-lg mb-4 overflow-hidden cursor-pointer" onClick={handleClick} style={{ minHeight: '300px' }}>
-        <img src={image} alt={title} className="mb-2 rounded-lg w-full h-auto" style={{ maxHeight: '300px', objectFit: 'cover' }} loading="lazy" />
-        <h3 className="text-md font-bold text-primary-color mb-2">{title}</h3>
+      <div className="bg-white shadow-lg border border-1 p-4 rounded-lg mb-4 overflow-hidden cursor-pointer" onClick={handleClick}>
+        <img src={image} alt={title} className=" rounded-lg w-full h-auto" style={{ maxHeight: '300px', objectFit: 'cover' }} loading="lazy" />
+        <h4 className="font-semibold text-center text-primary-color text-sm lg:text-base">{title}</h4>
       </div>
 
       {/* Back of the card */}
-      <div className="bg-white p-4 rounded-lg mb-4 overflow-hidden cursor-pointer" onClick={handleClick} style={{ minHeight: '300px' }}>
-        <div className={`text-gray-700 mb-2 ${isExpanded ? '' : 'line-clamp-4'}`} dangerouslySetInnerHTML={{ __html: description }} />
+      <div className="bg-white shadow-lg border border-1 border-solid p-4 rounded-lg mb-4 overflow-hidden cursor-pointer" onClick={handleClick}>
+        <p className={`text-gray-700 text-sm lg:text-base text-justify mb-2 ${isExpanded ? '' : 'line-clamp-4'}`} dangerouslySetInnerHTML={{ __html: description }}></p>
         <button onClick={toggleDescription} className="text-blue-500 hover:underline">
           {isExpanded ? 'Show less' : 'Read more'}
         </button>

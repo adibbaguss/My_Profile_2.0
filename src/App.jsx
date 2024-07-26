@@ -19,18 +19,18 @@ function App() {
     AOS.refresh();
   }, []); // Added empty dependency array to useEffect
 
-  useEffect(() => {
-    // Disable right-click context menu
-    const disableRightClick = (e) => {
-      e.preventDefault();
-    };
+  // useEffect(() => {
+  //   // Disable right-click context menu
+  //   const disableRightClick = (e) => {
+  //     e.preventDefault();
+  //   };
 
-    document.addEventListener('contextmenu', disableRightClick);
+  //   document.addEventListener('contextmenu', disableRightClick);
 
-    return () => {
-      document.removeEventListener('contextmenu', disableRightClick);
-    };
-  }, []);
+  //   return () => {
+  //     document.removeEventListener('contextmenu', disableRightClick);
+  //   };
+  // }, []);
 
   return (
     <div>
