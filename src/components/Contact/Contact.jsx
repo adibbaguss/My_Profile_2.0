@@ -35,8 +35,8 @@ export const Contact = () => {
     // Validate Message
     if (!message || message.trim() === '') {
       newErrors.message = 'Message is required';
-    } else if (message.length > 300) {
-      newErrors.message = 'Message must be 300 characters or less';
+    } else if (message.length > 1000) {
+      newErrors.message = 'Message must be 1000 characters or less';
     }
 
     setErrors(newErrors);
