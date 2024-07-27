@@ -74,8 +74,8 @@ export const Contact = () => {
     <section className="bg-primary-color text-secondary-color p-6 overflow-hidden relative">
       <h1 className="font-bold text-1xl sm:text-2xl md:text-3xl lg:text-3xl mb-10 text-secondary-color text-center">Contact Me</h1>
 
-      <div className="flex flex-col md:flex-row items-center justify-center">
-        <div className=" flex flex-col items-center md:items-start px-10 text-white">
+      <div className="flex flex-col md:flex-row items-center justify-center md:px-10 mb-10">
+        <div className="items-center md:items-start text-white lg:pr-10">
           <p className="mb-6 text-sm md:text-base">Contact me if you have questions, feedback, or collaboration opportunities. I'd love to hear your thoughts!</p>
           <div className="hidden md:block">
             <div className="mt-4 flex items-center">
@@ -95,8 +95,8 @@ export const Contact = () => {
           </div>
         </div>
 
-        <div className="w-full max-w-md md:w-1/2 mx-auto mt-8 md:mt-0 relative z-10">
-          <motion.form ref={form} onSubmit={sendEmail} className="bg-white rounded-lg shadow-lg p-8" initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
+        <div className="w-full max-w-md lg:w-1/2 mx-auto md:mt-0 relative z-10">
+          <motion.form ref={form} onSubmit={sendEmail} className="bg-white rounded-lg shadow-xl lg:p-8 p-4" initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
             <div className="mb-4">
               <label className="block text-primary-color mb-2">
                 Name<span className="text-red">*</span>
