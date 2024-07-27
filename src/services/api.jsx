@@ -7,7 +7,7 @@ const getWeather = async () => {
   try {
     const response = await axios.get(BASE_URL, {
       params: {
-        q: 'Batang',
+        q: 'limpung',
         appid: API_KEY,
         units: 'metric',
       },

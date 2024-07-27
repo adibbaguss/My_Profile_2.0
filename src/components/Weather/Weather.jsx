@@ -59,6 +59,7 @@ const Weather = () => {
       hour12: false,
     });
   };
+  console.log(weather);
 
   return (
     <div className="mx-3 font-thin mb-0">
@@ -66,7 +67,7 @@ const Weather = () => {
         <>
           <div className="hidden sm:grid sm:grid  text-xs">
             <div className="flex" data-aos="fade-down" data-aos-duration="1000">
-              <span className="font-bold mb-0 mt-auto">{Math.round(weather.main.temp)}°C</span>
+              <span className="font-bold mb-0 mt-auto">{weather.main.temp.toFixed(1)}°C</span>
               <img className="w-8" src={`http://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`} alt="weather icon" />
               <span className="mb-0 mt-auto">
                 Batang, Central Java, <span className="font-bold">Indonesia</span>
