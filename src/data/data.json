@@ -1,6 +1,6 @@
 {
   "name": "Adib Bagus Sudiyono",
-  "role": "Junior Full Stack Developer",
+  "role": "Jr. Full Stack Developer | Graphic Designer",
 
   "//": "1. Hero Section",
   "hero": {
@@ -14,7 +14,9 @@
   "about": {
     "sectionName": "About Me",
     "avatar": "/assets/Images/About/avatar.png",
-    "aboutMe": "A graduate of Informatics Engineering from Ahmad Dahlan University, specialized in software development. Experienced in front-end development, academic administration management, and website optimization. Proficient in teamwork, SDLC methodology implementation, with additional skills in graphic design and video editing."
+    "aboutMe": "A graduate of Informatics Engineering from Ahmad Dahlan University, specialized in software development. Experienced in front-end development, academic administration management, and website optimization. Proficient in teamwork, SDLC methodology implementation, with additional skills in graphic design and video editing.",
+    "role_1": "Jr. Full Stack Developer",
+    "role_2": "Graphic Designer"
   },
 
   "//": "3. Skills Section",

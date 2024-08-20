@@ -12,6 +12,7 @@ export default {
         'instagram-pink': '#C13584',
         'github-gray': '#333333',
         'telegram-blue': '#0088cc',
+        'shutterstock-orange': '#FF6F00',
         greenCustom: {
           50: '#f0fff4',
           100: '#dcfce7',

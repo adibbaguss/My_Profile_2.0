@@ -1,21 +1,24 @@
 import React from 'react';
+import { Icon } from '@iconify/react';
 
 const SocialIcons = () => {
   return (
-    <div className="items-center space-x-4">
+    <div className="flex justify-center items-center space-x-4">
       <a href="https://www.linkedin.com/in/adibbaguss/" target="_blank" rel="noopener noreferrer">
-        <i className="fab fa-linkedin text-primary-color text-3xl hover:text-linkedin-blue"></i>
+        <Icon icon="devicon:linkedin" className="text-3xl  hover:text-4xl" />
       </a>
       <a href="https://www.instagram.com/adibbagus_//" target="_blank" rel="noopener noreferrer">
-        <i className="fab fa-instagram text-primary-color text-3xl hover:text-instagram-pink"></i>
+        <Icon icon="skill-icons:instagram" className="text-3xl  hover:text-4xl" />
       </a>
       <a href="https://github.com/adibbaguss" target="_blank" rel="noopener noreferrer">
-        <i className="fab fa-github text-primary-color text-3xl hover:text-github-gray"></i>
+        <Icon icon="icon-park:github" className="text-3xl  hover:text-4xl" />
       </a>
       <a href="https://t.me/adb_24" target="_blank" rel="noopener noreferrer">
-        <i className="fab fa-telegram text-primary-color text-3xl hover:text-telegram-blue"></i>
+        <Icon icon="logos:telegram" className="text-3xl  hover:text-4xl" />
       </a>
-      {/* Tambahkan ikon media sosial lainnya sesuai kebutuhan */}
+      <a href="https://www.shutterstock.com/g/Adib+Baguss?sort=newest" target="_blank" rel="noopener noreferrer">
+        <Icon icon="simple-icons:shutterstock" className="text-3xl  hover:text-4xl bg-red text-white p-1 rounded" />
+      </a>
     </div>
   );
 };

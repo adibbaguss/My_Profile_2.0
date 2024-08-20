@@ -9,7 +9,7 @@ import projectsData from '../../data/project.json';
 // Add FontAwesome icons to the library
 library.add(faChevronDown, faChevronUp);
 
-function Project({ title, description, technologies, image, github }) {
+function Project({ title, description, technologies, image, github, preview }) {
   const [isFlipped, setIsFlipped] = useState(false);
   const [isExpanded, setIsExpanded] = useState(false);
 
@@ -25,27 +25,40 @@ function Project({ title, description, technologies, image, github }) {
     <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
       {/* Front of the card */}
       <div className="bg-white shadow-lg border border-1 p-4 rounded-lg mb-4 overflow-hidden cursor-pointer" onClick={handleClick}>
-        <img src={image} alt={title} className=" rounded-lg w-full h-auto" style={{ maxHeight: '300px', objectFit: 'cover' }} loading="lazy" />
-        <h4 className="font-semibold text-center text-primary-color text-sm lg:text-base">{title}</h4>
+        <img src={image} alt={title} className="rounded-lg w-full h-auto" style={{ maxHeight: '300px', objectFit: 'cover' }} loading="lazy" />
+        <h4 className="font-semibold text-center text-primary-color text-sm lg:text-base mt-2">{title}</h4>
       </div>
 
       {/* Back of the card */}
       <div className="bg-white shadow-lg border border-1 border-solid p-4 rounded-lg mb-4 overflow-hidden cursor-pointer" onClick={handleClick}>
         <p className={`text-gray-700 text-sm lg:text-base text-justify mb-2 ${isExpanded ? '' : 'line-clamp-4'}`} dangerouslySetInnerHTML={{ __html: description }}></p>
-        <button onClick={toggleDescription} className="text-blue-500 hover:underline">
+        <button
+          onClick={(e) => {
+            e.stopPropagation();
+            toggleDescription();
+          }}
+          className="text-blue-500 hover:underline"
+        >
           {isExpanded ? 'Show less' : 'Read more'}
         </button>
         <div className="flex flex-wrap mt-2">
           {technologies.map((tech, index) => (
-            <span key={index} className="bg-primary-color text-green rounded-lg px-3 py-1 text-xs mr-2 mb-2">
+            <span key={index} className="bg-gray-200 text-black rounded-lg px-3 py-1 text-xs mr-2 mb-2">
               {tech}
             </span>
           ))}
         </div>
-        <p className="text-sm mt-3 mb-2 text-right">
+        <p className="text-sm mt-3 mb-2 flex justify-end">
           {github ? (
-            <a className="bg-green text-primary-color p-2 font-semibold rounded-lg" target="_blank" rel="noopener noreferrer" href={github}>
+            <a className="border border-2 border-solid border-green text-green p-2 font-semibold rounded-lg mr-2 hover:bg-green hover:text-primary-color" target="_blank" rel="noopener noreferrer" href={github}>
               Github
+            </a>
+          ) : (
+            <span className="bg-red text-white p-2 font-semibold rounded-lg mr-2 ">Not available</span>
+          )}
+          {preview ? (
+            <a className="text-green bg-primary-color p-2 font-semibold rounded-lg" target="_blank" rel="noopener noreferrer" href={preview}>
+              Preview
             </a>
           ) : (
             <span className="bg-red text-white p-2 font-semibold rounded-lg">Not available</span>
@@ -68,20 +81,16 @@ function Projects() {
   };
 
   const toggleShowMore = () => {
-    if (showAll) {
-      setVisibleProjects(3); // Reset to initial number when showing less
-    } else {
-      setVisibleProjects(projectsData.length); // Show all projects
-    }
     setShowAll(!showAll);
+    setVisibleProjects(showAll ? 3 : projectsData.length); // Toggle between showing all or initial projects
   };
 
-  const uniqueCategories = ['All', ...Array.from(new Set(projectsData.map((project) => project.category)))];
+  const uniqueCategories = ['All', ...new Set(projectsData.map((project) => project.category))];
 
   return (
     <section className="bg-gray-100 p-6">
       <h1 className="font-bold text-1xl sm:text-2xl md:text-3xl lg:text-3xl mb-2 text-primary-color">Projects</h1>
-      <p className="text-sm text-gray">--Flip to view description--</p>
+      <p className="text-sm text-gray-500 mb-4">-- Flip to view description --</p>
       <div className="flex overflow-x-auto p-3 mb-4">
         {uniqueCategories.map((category, index) => (
           <motion.button
@@ -101,7 +110,15 @@ function Projects() {
           .filter((project) => activeFilter === 'All' || project.category === activeFilter)
           .slice(0, visibleProjects) // Show only a subset of projects
           .map((project) => (
-            <Project key={project.id} title={project.title} description={project.description} technologies={project.technologies} image={project.image} github={project.github} />
+            <Project
+              key={project.id}
+              title={project.title}
+              description={project.description}
+              technologies={project.technologies}
+              image={project.image}
+              github={project.github}
+              preview={project.preview} // Ensure this prop is passed
+            />
           ))}
       </div>
       <div className="text-center mt-4">

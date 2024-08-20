@@ -6,6 +6,7 @@
     "technologies": ["Laravel", "PHP", "HTML/CSS", "Javascript", "Bootstrap", "LeafletJs", "Cropper.js", "Chart.js"],
     "image": "/assets/Images/Portofolio/webgis ponpes.png",
     "github": "https://github.com/adibbaguss/Webgis_Pesantren",
+    "preview": "",
     "category": "Website"
   },
   {
@@ -15,6 +16,7 @@
     "technologies": ["Java", "XML", "Google Maps API"],
     "image": "/assets/Images/Portofolio/smart parking.jpg",
     "github": "https://github.com/adibbaguss/PMOB-Aplikasi-Parkir-Pintar",
+    "preview": "",
     "category": "Mobile"
   },
   {
@@ -24,6 +26,7 @@
     "technologies": ["React Native", "Expo", "TypeScript", "CSS3", "TMDb API"],
     "image": "/assets/Images/Portofolio/movieapp.png",
     "github": "https://github.com/adibbaguss/Proyek-MovieApp",
+    "preview": "",
     "category": "Mobile"
   },
   {
@@ -33,6 +36,7 @@
     "technologies": ["CodeIgniter", "Bootstrap", "PHP", "HTML/CSS", "JavaScript"],
     "image": "/assets/Images/Portofolio/landing page travel.png",
     "github": "https://github.com/adibbaguss/landing_page_travel",
+    "preview": "",
     "category": "Website"
   },
   {
@@ -42,6 +46,7 @@
     "technologies": ["CodeIgniter", "Bootstrap", "PHP", "HTML/CSS", "JavaScript"],
     "image": "/assets/Images/Portofolio/landing page deler.png",
     "github": "https://github.com/adibbaguss/landing_page_dealer",
+    "preview": "",
     "category": "Website"
   },
   {
@@ -51,6 +56,17 @@
     "technologies": ["Laravel", "PHP", "MySQL"],
     "image": "/assets/Images/Portofolio/rest api smk.png",
     "github": "https://github.com/adibbaguss/rest-api-sekolah-smk",
+    "preview": "",
     "category": "API"
+  },
+  {
+    "id": 7,
+    "title": "Links Agustusan-Reactif",
+    "description": "A website containing various links to Twibbons, Instagram filters, promotional videos, and more, all of which I created for the Independence Day competition activities in the village.",
+    "technologies": ["React", "Tailwind CSS"],
+    "image": "/assets/Images/Portofolio/link agustusan.png",
+    "github": "https://github.com/reactif2019/link_agustusan",
+    "preview": "https://Reactif2019.github.io/link_agustusan",
+    "category": "Website"
   }
 ]

@@ -1,7 +1,7 @@
 import React from 'react';
 import dataJson from '../../data/data.json';
 import Skills from '../Skills/Skills';
-
+import Typing from '../Typing/Typing';
 function About() {
   return (
     <section className="lg:h-screen overflow-hidden">
@@ -9,7 +9,11 @@ function About() {
       <div className="rounded xl:ml-28 xl:mt-24 mt-0 ml-0 p-4 block sm:hidden">
         <h1 className="font-bold text-1xl sm:text-2xl md:text-3xl lg:text-3xl mb-2 text-primary-color">{dataJson.about.sectionName}</h1>
         <div className="font-bold text-sm md:text-base ">
-          <span className="text-primary-color">{dataJson.name} | </span> <span className="text-green bg-primary-color px-1">{dataJson.role}</span>
+          <span className="text-primary-color">{dataJson.name} | </span>{' '}
+          <span className="text-green bg-primary-color px-1 ml-1">
+            {' '}
+            <Typing />
+          </span>
         </div>
         <p className="text-justify text-sm lg:text-base">{dataJson.about.aboutMe}</p>
       </div>
@@ -18,8 +22,12 @@ function About() {
         <div className="md:basis-1/2 basis-4/5 ">
           <div className="rounded ml-0 mt-0 p-4 hidden sm:block lg:ml-28 lg:mt-24">
             <h1 className="font-bold text-1xl sm:text-2xl md:text-3xl lg:text-3xl mb-2 text-primary-color">{dataJson.about.sectionName}</h1>
-            <div className="font-bold text-sm lg:text-base">
-              <span className="text-primary-color">{dataJson.name} | </span> <span className="text-green bg-primary-color px-1">{dataJson.role}</span>
+            <div className="flex font-bold text-sm lg:text-base">
+              <span className="text-primary-color">{dataJson.name} | </span>{' '}
+              <span className="text-green bg-primary-color px-1 ml-1">
+                {' '}
+                <Typing />
+              </span>
             </div>
             <p className="text-justify text-sm md:text-base">{dataJson.about.aboutMe}</p>
           </div>
